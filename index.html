@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stopwatch</title>
+	<!-- Linking to a central CSS file is good practice for a consistent design -->
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+	<header>
+		<h1>Companionem Linguae</h1>
+		<nav aria-label="Globale Navigation">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li class="dropdown">
+					<a href="#timers" class="dropbtn">Timers</a>
+					<div class="dropdown-content">
+						<a href="/smoke-free-tracker">Smoke-Free Tracker</a>
+						<a href="/stopwatch">Stopwatch</a>
+						<a href="/countdown-timer">Countdown Timer</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section id="stopwatch-app" aria-labelledby="stopwatch_heading">
+			<h1 id="stopwatch_heading" class="visually-hidden">Stopwatch</h1>
+			<div class="display-container">
+				<p id="display">00:00:00.00</p>
+			</div>
+			
+			<div class="controls">
+				<button id="startStopBtn" type="button">Start</button>
+				<button id="lapBtn" type="button" disabled>Lap</button>
+				<button id="resetBtn" type="button">Reset</button>
+			</div>
+			
+			<div id="laps-container">
+				<h2>Laps</h2>
+				<ol id="laps-list"></ol>
+			</div>
+		</section>
+	</main>
+	
+	<footer>
+		<p>Stopwatch © 2025 by AdeptusCode</p>
+	</footer>
+	
+	<script type="module" src="main.js"></script>
+</body>
+</html>	
